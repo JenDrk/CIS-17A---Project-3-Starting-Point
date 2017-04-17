@@ -26,6 +26,7 @@ public:
 	void AddPaladin(std::string name);
 	void AddRanger(std::string name);
 	void AddWarrior(std::string name);
+	//void AddAdventurer(std::string name);
 
 	std::string GetInfo();
 

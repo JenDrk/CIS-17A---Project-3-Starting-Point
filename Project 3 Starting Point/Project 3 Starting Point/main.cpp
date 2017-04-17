@@ -4,6 +4,12 @@
 #include "Guild.h"
 using namespace std;
 
+//class that all the classes inherit from.
+//move all the methods into the main class
+//create a base class
+//move methods and properties into base class
+//Add function to one
+
 void DisplayGuildInfo(const shared_ptr<Guild> guild);
 void AddAdventurer(const shared_ptr<Guild> guild);
 void Attack(const shared_ptr<Guild> guild);
