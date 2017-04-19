@@ -32,6 +32,11 @@ void Guild::AddWarrior(std::string name)
 	_warriors.push_back(warrior);
 }
 
+void Guild::AddAdventurer(std::shared_ptr<Adventurer> adventurer)
+{
+	_adventurers.push_back(adventurer);
+}
+
 std::string Guild::GetInfo()
 {
 	std::string output = "Your guild has: \n";	

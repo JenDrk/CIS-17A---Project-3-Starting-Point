@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include "Adventurer.h"
 #include "Mage.h"
 #include "Paladin.h"
 #include "Ranger.h"
@@ -14,6 +15,7 @@ private:
 	std::vector<std::shared_ptr<Paladin>> _paladins;
 	std::vector<std::shared_ptr<Ranger>> _rangers;
 	std::vector<std::shared_ptr<Warrior>> _warriors;
+	std::vector<std::shared_ptr<Adventurer>> _adventurers;
 	
 	std::string _name;
 	int _gold = 0;
@@ -26,7 +28,7 @@ public:
 	void AddPaladin(std::string name);
 	void AddRanger(std::string name);
 	void AddWarrior(std::string name);
-	//void AddAdventurer(std::string name);
+	void AddAdventurer(std::shared_ptr<Adventurer> adventurer);
 
 	std::string GetInfo();
 

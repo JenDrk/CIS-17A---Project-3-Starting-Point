@@ -69,7 +69,10 @@ void AddAdventurer(const shared_ptr<Guild> guild)
 	cin >> choice;
 	switch (choice)
 	{
-	case 1: guild->AddMage(name); break;
+	case 1: {
+		auto character = make_shared<Mage>(name);
+		guild->AddAdventurer(character);
+	}break;
 	case 2: guild->AddRanger(name); break;
 	case 3: guild->AddPaladin(name); break;	
 	case 4: guild->AddWarrior(name); break;
