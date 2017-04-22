@@ -2,11 +2,11 @@
 #include <iostream>
 class Adventurer
 {
+private:
+	std::string _name;
 public:
 	Adventurer();
 	~Adventurer();
 
-	std::string virtual Attack();
-	std::string AttackWithMages() { return _name + " casts magic missle at the darkness!"; }
+	std::string virtual Attack() { return _name + "attacks!"; }
 };
-

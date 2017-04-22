@@ -95,9 +95,9 @@ std::string Guild::AttackWithWarriors()
 std::string Guild::AttackWithAllAdventurers()
 {
 	std::string output = "You command everyone to attack! \n";
-	output += AttackWithMages();
-	output += AttackWithPaladins();
-	output += AttackWithRangers();
-	output += AttackWithWarriors();
+	for (auto adventurer : _adventurers)
+	{
+		output += adventurer->Attack();
+	}
 	return output;
 }

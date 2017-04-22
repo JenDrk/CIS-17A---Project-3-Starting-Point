@@ -4,12 +4,6 @@
 #include "Guild.h"
 using namespace std;
 
-//class that all the classes inherit from.
-//move all the methods into the main class
-//create a base class
-//move methods and properties into base class
-//Add function to one
-
 void DisplayGuildInfo(const shared_ptr<Guild> guild);
 void AddAdventurer(const shared_ptr<Guild> guild);
 void Attack(const shared_ptr<Guild> guild);
@@ -69,10 +63,7 @@ void AddAdventurer(const shared_ptr<Guild> guild)
 	cin >> choice;
 	switch (choice)
 	{
-	case 1: {
-		auto character = make_shared<Mage>(name);
-		guild->AddAdventurer(character);
-	}break;
+	case 1: guild->AddMage(name); break;
 	case 2: guild->AddRanger(name); break;
 	case 3: guild->AddPaladin(name); break;	
 	case 4: guild->AddWarrior(name); break;
